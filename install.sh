@@ -7,7 +7,7 @@ cp config/* /etc/
 chmod 777 /etc/mongod*
 
 cp init.d/* /etc/init.d/
-chmod 777 /etc/mongod*
+chmod 777 /etc/init.d/mongod*
 
 chkconfig mongod on
 chkconfig mongod_27018 on
