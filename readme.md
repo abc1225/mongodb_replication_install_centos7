@@ -11,7 +11,7 @@
 	a. 将mongo下载后, 拷贝至 /usr/bin/ 目录下
 	b. 将init.d下的启动脚本放置 /etc/init.d 下 config下的脚本放置 /etc/下
 
-	二、 修改三个配置文件mongod*.conf绑定的IP地址
+	二、 修改三个配置文件mongod*.conf绑定的IP地址 (注意： 连接公网的服务器，千万不要把公网地址绑定上去!!!)
 
 	三、 配置复制集, 并设置主库优先级 
 
