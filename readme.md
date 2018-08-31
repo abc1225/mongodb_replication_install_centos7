@@ -1,6 +1,21 @@
 # README #
 
-	MongoDB复制集的概述
+# 安装 #
+
+	一、 执行install.sh 将安装好三个 mongodDB, 即执行以下a和b的步骤，启动命令：
+		
+	service mongod start
+	service mongod_27018 start
+	service mongod_27019 start	
+
+	a. 将mongo下载后, 拷贝至 /usr/bin/ 目录下
+	b. 将init.d下的启动脚本放置 /etc/init.d 下 config下的脚本放置 /etc/下
+
+	二、 修改三个配置文件mongod*.conf绑定的IP地址
+
+	三、 配置复制集, 并设置主库优先级 
+
+# MongoDB复制集的概述 #
 
 	复制集是额外的数据副本，是跨多个服务器同步数据的过程，复制集提供了冗余并增加了数据可用性，通过复制集可以对硬件故障和中断的服务进行恢复。
 
